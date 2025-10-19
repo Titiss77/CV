@@ -4,17 +4,25 @@
             --padding: 10px;
             --border-radius: 20px;
             --border-radius-img: 50%;
+
+            /* TYPOGRAPHIE & TAILLES */
             --font-size-small: 12px;
             --font-size-medium: 18px;
             --font-size-large: 22px;
             --font-size-header: 20px;
-            --bg-overlay: rgba(255, 255, 255, 0.4);
-            --bg-body: #ffffff;
-            --bg-h-f: #dfdfdf;
-            --color-text: #000000;
-            --color-border: gray;
-            --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            /* PALETTE PROFESSIONNELLE */
+            --bg-body: #f7f7f9;            /* Fond général clair gris-écru */
+            --bg-h-f: #ffffff;             /* Sections / blocs blancs */
+            --bg-overlay: rgba(255, 255, 255, 0.6);
+
+            --color-text: #2e2e2e;         /* Texte gris anthracite élégant */
+            --color-border: #d0d0d0;       /* Bordures très légères */
+
+            /* Ombres subtiles et modernes */
+            --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
+
 
         * {
             font-family: Avenir, sans-serif;

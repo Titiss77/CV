@@ -1,17 +1,21 @@
 <?php
-require '../../serveur.php';
-require '../../themeRoot.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require 'serveur.php';
+
 
 // Récupérer les infos contact (1 seul enregistrement)
-$stmt = $connexion->query("SELECT * FROM InfoContact WHERE id = 1");
+$stmt = $connexion->query("SELECT * FROM infocontact WHERE id = 1");
 $contact = $stmt->fetch();
 
 // Récupérer les expériences pro
-$stmt = $connexion->query("SELECT * FROM ExpPro ORDER BY id DESC");
+$stmt = $connexion->query("SELECT * FROM exppro ORDER BY id DESC");
 $experiences = $stmt->fetchAll();
 
 // Récupérer les formations
-$stmt = $connexion->query("SELECT * FROM Formation ORDER BY id DESC");
+$stmt = $connexion->query("SELECT * FROM formation ORDER BY id DESC");
 $formations = $stmt->fetchAll();
 
 // Récupérer les loisirs

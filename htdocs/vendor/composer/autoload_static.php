@@ -23,7 +23,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
     );
 
     public static $prefixLengthsPsr4 = array (
-        'S' =>
+        'S' => 
         array (
             'Symfony\\Polyfill\\Php84\\' => 23,
             'Symfony\\Polyfill\\Php81\\' => 23,
@@ -43,7 +43,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\Console\\' => 26,
         ),
-        'R' =>
+        'R' => 
         array (
             'React\\Stream\\' => 13,
             'React\\Socket\\' => 13,
@@ -53,7 +53,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
             'React\\ChildProcess\\' => 19,
             'React\\Cache\\' => 12,
         ),
-        'P' =>
+        'P' => 
         array (
             'Psr\\Log\\' => 8,
             'Psr\\EventDispatcher\\' => 20,
@@ -62,36 +62,39 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
             'PhpParser\\' => 10,
             'PhpCsFixer\\' => 11,
         ),
-        'N' =>
+        'N' => 
         array (
             'Nexus\\CsConfig\\' => 15,
         ),
-        'L' =>
+        'L' => 
         array (
             'Laminas\\Escaper\\' => 16,
         ),
-        'K' =>
+        'K' => 
         array (
             'Kint\\' => 5,
         ),
-        'F' =>
+        'F' => 
         array (
             'Fidry\\CpuCoreCounter\\' => 21,
             'Faker\\' => 6,
         ),
-        'E' =>
+        'E' => 
         array (
             'Evenement\\' => 10,
+            'Ergebnis\\AgentDetector\\' => 23,
         ),
-        'D' =>
+        'D' => 
         array (
             'DeepCopy\\' => 9,
         ),
-        'C' =>
+        'C' => 
         array (
             'Composer\\XdebugHandler\\' => 23,
             'Composer\\Semver\\' => 16,
             'Composer\\Pcre\\' => 14,
+            'CodeIgniter\\Shield\\' => 19,
+            'CodeIgniter\\Settings\\' => 21,
             'CodeIgniter\\CodingStandard\\' => 27,
             'CodeIgniter\\' => 12,
             'Clue\\React\\NDJson\\' => 18,
@@ -99,184 +102,196 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Php84\\' =>
+        'Symfony\\Polyfill\\Php84\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php84',
         ),
-        'Symfony\\Polyfill\\Php81\\' =>
+        'Symfony\\Polyfill\\Php81\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php81',
         ),
-        'Symfony\\Polyfill\\Php80\\' =>
+        'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' =>
+        'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
-        'Symfony\\Polyfill\\Ctype\\' =>
+        'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Symfony\\Contracts\\Service\\' =>
+        'Symfony\\Contracts\\Service\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Contracts\\EventDispatcher\\' =>
+        'Symfony\\Contracts\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
-        'Symfony\\Component\\String\\' =>
+        'Symfony\\Component\\String\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
-        'Symfony\\Component\\Stopwatch\\' =>
+        'Symfony\\Component\\Stopwatch\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/stopwatch',
         ),
-        'Symfony\\Component\\Process\\' =>
+        'Symfony\\Component\\Process\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
         ),
-        'Symfony\\Component\\OptionsResolver\\' =>
+        'Symfony\\Component\\OptionsResolver\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/options-resolver',
         ),
-        'Symfony\\Component\\Finder\\' =>
+        'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
         ),
-        'Symfony\\Component\\Filesystem\\' =>
+        'Symfony\\Component\\Filesystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
         ),
-        'Symfony\\Component\\EventDispatcher\\' =>
+        'Symfony\\Component\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Symfony\\Component\\Console\\' =>
+        'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'React\\Stream\\' =>
+        'React\\Stream\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/stream/src',
         ),
-        'React\\Socket\\' =>
+        'React\\Socket\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/socket/src',
         ),
-        'React\\Promise\\' =>
+        'React\\Promise\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/promise/src',
         ),
-        'React\\EventLoop\\' =>
+        'React\\EventLoop\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/event-loop/src',
         ),
-        'React\\Dns\\' =>
+        'React\\Dns\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/dns/src',
         ),
-        'React\\ChildProcess\\' =>
+        'React\\ChildProcess\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/child-process/src',
         ),
-        'React\\Cache\\' =>
+        'React\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/cache/src',
         ),
-        'Psr\\Log\\' =>
+        'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\EventDispatcher\\' =>
+        'Psr\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
-        'Psr\\Container\\' =>
+        'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Predis\\' =>
+        'Predis\\' => 
         array (
             0 => __DIR__ . '/..' . '/predis/predis/src',
         ),
-        'PhpParser\\' =>
+        'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'PhpCsFixer\\' =>
+        'PhpCsFixer\\' => 
         array (
             0 => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src',
         ),
-        'Nexus\\CsConfig\\' =>
+        'Nexus\\CsConfig\\' => 
         array (
             0 => __DIR__ . '/..' . '/nexusphp/cs-config/src',
         ),
-        'Laminas\\Escaper\\' =>
+        'Laminas\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
         ),
-        'Kint\\' =>
+        'Kint\\' => 
         array (
             0 => __DIR__ . '/..' . '/kint-php/kint/src',
         ),
-        'Fidry\\CpuCoreCounter\\' =>
+        'Fidry\\CpuCoreCounter\\' => 
         array (
             0 => __DIR__ . '/..' . '/fidry/cpu-core-counter/src',
         ),
-        'Faker\\' =>
+        'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
-        'Evenement\\' =>
+        'Evenement\\' => 
         array (
             0 => __DIR__ . '/..' . '/evenement/evenement/src',
         ),
-        'DeepCopy\\' =>
+        'Ergebnis\\AgentDetector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ergebnis/agent-detector/src',
+        ),
+        'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'Composer\\XdebugHandler\\' =>
+        'Composer\\XdebugHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/xdebug-handler/src',
         ),
-        'Composer\\Semver\\' =>
+        'Composer\\Semver\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
         ),
-        'Composer\\Pcre\\' =>
+        'Composer\\Pcre\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
         ),
-        'CodeIgniter\\CodingStandard\\' =>
+        'CodeIgniter\\Shield\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codeigniter4/shield/src',
+        ),
+        'CodeIgniter\\Settings\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codeigniter4/settings/src',
+        ),
+        'CodeIgniter\\CodingStandard\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeigniter/coding-standard/src',
         ),
-        'CodeIgniter\\' =>
+        'CodeIgniter\\' => 
         array (
             0 => __DIR__ . '/../..' . '/system',
         ),
-        'Clue\\React\\NDJson\\' =>
+        'Clue\\React\\NDJson\\' => 
         array (
             0 => __DIR__ . '/..' . '/clue/ndjson-react/src',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'o' =>
+        'o' => 
         array (
-            'org\\bovigo\\vfs\\' =>
+            'org\\bovigo\\vfs\\' => 
             array (
                 0 => __DIR__ . '/..' . '/mikey179/vfsstream/src/main/php',
             ),
@@ -624,6 +639,112 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'CodeIgniter\\Session\\Handlers\\RedisHandler' => __DIR__ . '/../..' . '/system/Session/Handlers/RedisHandler.php',
         'CodeIgniter\\Session\\Session' => __DIR__ . '/../..' . '/system/Session/Session.php',
         'CodeIgniter\\Session\\SessionInterface' => __DIR__ . '/../..' . '/system/Session/SessionInterface.php',
+        'CodeIgniter\\Settings\\Commands\\ClearSettings' => __DIR__ . '/..' . '/codeigniter4/settings/src/Commands/ClearSettings.php',
+        'CodeIgniter\\Settings\\Commands\\PublishSettings' => __DIR__ . '/..' . '/codeigniter4/settings/src/Commands/PublishSettings.php',
+        'CodeIgniter\\Settings\\Config\\Services' => __DIR__ . '/..' . '/codeigniter4/settings/src/Config/Services.php',
+        'CodeIgniter\\Settings\\Config\\Settings' => __DIR__ . '/..' . '/codeigniter4/settings/src/Config/Settings.php',
+        'CodeIgniter\\Settings\\Handlers\\ArrayHandler' => __DIR__ . '/..' . '/codeigniter4/settings/src/Handlers/ArrayHandler.php',
+        'CodeIgniter\\Settings\\Handlers\\BaseHandler' => __DIR__ . '/..' . '/codeigniter4/settings/src/Handlers/BaseHandler.php',
+        'CodeIgniter\\Settings\\Handlers\\DatabaseHandler' => __DIR__ . '/..' . '/codeigniter4/settings/src/Handlers/DatabaseHandler.php',
+        'CodeIgniter\\Settings\\Handlers\\FileHandler' => __DIR__ . '/..' . '/codeigniter4/settings/src/Handlers/FileHandler.php',
+        'CodeIgniter\\Settings\\Settings' => __DIR__ . '/..' . '/codeigniter4/settings/src/Settings.php',
+        'CodeIgniter\\Shield\\Auth' => __DIR__ . '/..' . '/codeigniter4/shield/src/Auth.php',
+        'CodeIgniter\\Shield\\Authentication\\Actions\\ActionInterface' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Actions/ActionInterface.php',
+        'CodeIgniter\\Shield\\Authentication\\Actions\\ConditionalActionInterface' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Actions/ConditionalActionInterface.php',
+        'CodeIgniter\\Shield\\Authentication\\Actions\\Email2FA' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Actions/Email2FA.php',
+        'CodeIgniter\\Shield\\Authentication\\Actions\\EmailActivator' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Actions/EmailActivator.php',
+        'CodeIgniter\\Shield\\Authentication\\Authentication' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Authentication.php',
+        'CodeIgniter\\Shield\\Authentication\\AuthenticationException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/AuthenticationException.php',
+        'CodeIgniter\\Shield\\Authentication\\AuthenticatorInterface' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/AuthenticatorInterface.php',
+        'CodeIgniter\\Shield\\Authentication\\Authenticators\\AccessTokens' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Authenticators/AccessTokens.php',
+        'CodeIgniter\\Shield\\Authentication\\Authenticators\\HmacSha256' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Authenticators/HmacSha256.php',
+        'CodeIgniter\\Shield\\Authentication\\Authenticators\\JWT' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Authenticators/JWT.php',
+        'CodeIgniter\\Shield\\Authentication\\Authenticators\\Session' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Authenticators/Session.php',
+        'CodeIgniter\\Shield\\Authentication\\HMAC\\HmacEncrypter' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/HMAC/HmacEncrypter.php',
+        'CodeIgniter\\Shield\\Authentication\\JWTManager' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/JWTManager.php',
+        'CodeIgniter\\Shield\\Authentication\\JWT\\Adapters\\FirebaseAdapter' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/JWT/Adapters/FirebaseAdapter.php',
+        'CodeIgniter\\Shield\\Authentication\\JWT\\Exceptions\\InvalidTokenException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/JWT/Exceptions/InvalidTokenException.php',
+        'CodeIgniter\\Shield\\Authentication\\JWT\\JWSAdapterInterface' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/JWT/JWSAdapterInterface.php',
+        'CodeIgniter\\Shield\\Authentication\\JWT\\JWSDecoder' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/JWT/JWSDecoder.php',
+        'CodeIgniter\\Shield\\Authentication\\JWT\\JWSEncoder' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/JWT/JWSEncoder.php',
+        'CodeIgniter\\Shield\\Authentication\\Passwords' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Passwords.php',
+        'CodeIgniter\\Shield\\Authentication\\Passwords\\BaseValidator' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Passwords/BaseValidator.php',
+        'CodeIgniter\\Shield\\Authentication\\Passwords\\CompositionValidator' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Passwords/CompositionValidator.php',
+        'CodeIgniter\\Shield\\Authentication\\Passwords\\DictionaryValidator' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Passwords/DictionaryValidator.php',
+        'CodeIgniter\\Shield\\Authentication\\Passwords\\NothingPersonalValidator' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Passwords/NothingPersonalValidator.php',
+        'CodeIgniter\\Shield\\Authentication\\Passwords\\PwnedValidator' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Passwords/PwnedValidator.php',
+        'CodeIgniter\\Shield\\Authentication\\Passwords\\ValidationRules' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Passwords/ValidationRules.php',
+        'CodeIgniter\\Shield\\Authentication\\Passwords\\ValidatorInterface' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Passwords/ValidatorInterface.php',
+        'CodeIgniter\\Shield\\Authentication\\Traits\\HasAccessTokens' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Traits/HasAccessTokens.php',
+        'CodeIgniter\\Shield\\Authentication\\Traits\\HasHmacTokens' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authentication/Traits/HasHmacTokens.php',
+        'CodeIgniter\\Shield\\Authorization\\AuthorizationException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authorization/AuthorizationException.php',
+        'CodeIgniter\\Shield\\Authorization\\Groups' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authorization/Groups.php',
+        'CodeIgniter\\Shield\\Authorization\\PermissionMatcher' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authorization/PermissionMatcher.php',
+        'CodeIgniter\\Shield\\Authorization\\Traits\\Authorizable' => __DIR__ . '/..' . '/codeigniter4/shield/src/Authorization/Traits/Authorizable.php',
+        'CodeIgniter\\Shield\\Collectors\\Auth' => __DIR__ . '/..' . '/codeigniter4/shield/src/Collectors/Auth.php',
+        'CodeIgniter\\Shield\\Commands\\BaseCommand' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/BaseCommand.php',
+        'CodeIgniter\\Shield\\Commands\\Exceptions\\BadInputException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/Exceptions/BadInputException.php',
+        'CodeIgniter\\Shield\\Commands\\Exceptions\\CancelException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/Exceptions/CancelException.php',
+        'CodeIgniter\\Shield\\Commands\\Generators\\UserModelGenerator' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/Generators/UserModelGenerator.php',
+        'CodeIgniter\\Shield\\Commands\\Hmac' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/Hmac.php',
+        'CodeIgniter\\Shield\\Commands\\Setup' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/Setup.php',
+        'CodeIgniter\\Shield\\Commands\\Setup\\ContentReplacer' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/Setup/ContentReplacer.php',
+        'CodeIgniter\\Shield\\Commands\\User' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/User.php',
+        'CodeIgniter\\Shield\\Commands\\Utils\\InputOutput' => __DIR__ . '/..' . '/codeigniter4/shield/src/Commands/Utils/InputOutput.php',
+        'CodeIgniter\\Shield\\Config\\Auth' => __DIR__ . '/..' . '/codeigniter4/shield/src/Config/Auth.php',
+        'CodeIgniter\\Shield\\Config\\AuthGroups' => __DIR__ . '/..' . '/codeigniter4/shield/src/Config/AuthGroups.php',
+        'CodeIgniter\\Shield\\Config\\AuthJWT' => __DIR__ . '/..' . '/codeigniter4/shield/src/Config/AuthJWT.php',
+        'CodeIgniter\\Shield\\Config\\AuthRoutes' => __DIR__ . '/..' . '/codeigniter4/shield/src/Config/AuthRoutes.php',
+        'CodeIgniter\\Shield\\Config\\AuthToken' => __DIR__ . '/..' . '/codeigniter4/shield/src/Config/AuthToken.php',
+        'CodeIgniter\\Shield\\Config\\BaseAuthToken' => __DIR__ . '/..' . '/codeigniter4/shield/src/Config/BaseAuthToken.php',
+        'CodeIgniter\\Shield\\Config\\Registrar' => __DIR__ . '/..' . '/codeigniter4/shield/src/Config/Registrar.php',
+        'CodeIgniter\\Shield\\Config\\Services' => __DIR__ . '/..' . '/codeigniter4/shield/src/Config/Services.php',
+        'CodeIgniter\\Shield\\Controllers\\ActionController' => __DIR__ . '/..' . '/codeigniter4/shield/src/Controllers/ActionController.php',
+        'CodeIgniter\\Shield\\Controllers\\LoginController' => __DIR__ . '/..' . '/codeigniter4/shield/src/Controllers/LoginController.php',
+        'CodeIgniter\\Shield\\Controllers\\MagicLinkController' => __DIR__ . '/..' . '/codeigniter4/shield/src/Controllers/MagicLinkController.php',
+        'CodeIgniter\\Shield\\Controllers\\RegisterController' => __DIR__ . '/..' . '/codeigniter4/shield/src/Controllers/RegisterController.php',
+        'CodeIgniter\\Shield\\Entities\\AccessToken' => __DIR__ . '/..' . '/codeigniter4/shield/src/Entities/AccessToken.php',
+        'CodeIgniter\\Shield\\Entities\\Group' => __DIR__ . '/..' . '/codeigniter4/shield/src/Entities/Group.php',
+        'CodeIgniter\\Shield\\Entities\\Login' => __DIR__ . '/..' . '/codeigniter4/shield/src/Entities/Login.php',
+        'CodeIgniter\\Shield\\Entities\\User' => __DIR__ . '/..' . '/codeigniter4/shield/src/Entities/User.php',
+        'CodeIgniter\\Shield\\Entities\\UserIdentity' => __DIR__ . '/..' . '/codeigniter4/shield/src/Entities/UserIdentity.php',
+        'CodeIgniter\\Shield\\Exceptions\\BaseException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/BaseException.php',
+        'CodeIgniter\\Shield\\Exceptions\\GroupException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/GroupException.php',
+        'CodeIgniter\\Shield\\Exceptions\\InvalidArgumentException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/InvalidArgumentException.php',
+        'CodeIgniter\\Shield\\Exceptions\\LogicException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/LogicException.php',
+        'CodeIgniter\\Shield\\Exceptions\\PermissionException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/PermissionException.php',
+        'CodeIgniter\\Shield\\Exceptions\\RuntimeException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/RuntimeException.php',
+        'CodeIgniter\\Shield\\Exceptions\\SecurityException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/SecurityException.php',
+        'CodeIgniter\\Shield\\Exceptions\\UserNotFoundException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/UserNotFoundException.php',
+        'CodeIgniter\\Shield\\Exceptions\\ValidationException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Exceptions/ValidationException.php',
+        'CodeIgniter\\Shield\\Filters\\AbstractAuthFilter' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/AbstractAuthFilter.php',
+        'CodeIgniter\\Shield\\Filters\\AuthRates' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/AuthRates.php',
+        'CodeIgniter\\Shield\\Filters\\ChainAuth' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/ChainAuth.php',
+        'CodeIgniter\\Shield\\Filters\\ForcePasswordResetFilter' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/ForcePasswordResetFilter.php',
+        'CodeIgniter\\Shield\\Filters\\GroupFilter' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/GroupFilter.php',
+        'CodeIgniter\\Shield\\Filters\\HmacAuth' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/HmacAuth.php',
+        'CodeIgniter\\Shield\\Filters\\JWTAuth' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/JWTAuth.php',
+        'CodeIgniter\\Shield\\Filters\\PermissionFilter' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/PermissionFilter.php',
+        'CodeIgniter\\Shield\\Filters\\SessionAuth' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/SessionAuth.php',
+        'CodeIgniter\\Shield\\Filters\\TokenAuth' => __DIR__ . '/..' . '/codeigniter4/shield/src/Filters/TokenAuth.php',
+        'CodeIgniter\\Shield\\Models\\BaseModel' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/BaseModel.php',
+        'CodeIgniter\\Shield\\Models\\CheckQueryReturnTrait' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/CheckQueryReturnTrait.php',
+        'CodeIgniter\\Shield\\Models\\DatabaseException' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/DatabaseException.php',
+        'CodeIgniter\\Shield\\Models\\GroupModel' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/GroupModel.php',
+        'CodeIgniter\\Shield\\Models\\LoginModel' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/LoginModel.php',
+        'CodeIgniter\\Shield\\Models\\PermissionModel' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/PermissionModel.php',
+        'CodeIgniter\\Shield\\Models\\RememberModel' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/RememberModel.php',
+        'CodeIgniter\\Shield\\Models\\TokenLoginModel' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/TokenLoginModel.php',
+        'CodeIgniter\\Shield\\Models\\UserIdentityModel' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/UserIdentityModel.php',
+        'CodeIgniter\\Shield\\Models\\UserModel' => __DIR__ . '/..' . '/codeigniter4/shield/src/Models/UserModel.php',
+        'CodeIgniter\\Shield\\Result' => __DIR__ . '/..' . '/codeigniter4/shield/src/Result.php',
+        'CodeIgniter\\Shield\\Test\\AuthenticationTesting' => __DIR__ . '/..' . '/codeigniter4/shield/src/Test/AuthenticationTesting.php',
+        'CodeIgniter\\Shield\\Test\\MockInputOutput' => __DIR__ . '/..' . '/codeigniter4/shield/src/Test/MockInputOutput.php',
+        'CodeIgniter\\Shield\\Traits\\Activatable' => __DIR__ . '/..' . '/codeigniter4/shield/src/Traits/Activatable.php',
+        'CodeIgniter\\Shield\\Traits\\Bannable' => __DIR__ . '/..' . '/codeigniter4/shield/src/Traits/Bannable.php',
+        'CodeIgniter\\Shield\\Traits\\Resettable' => __DIR__ . '/..' . '/codeigniter4/shield/src/Traits/Resettable.php',
+        'CodeIgniter\\Shield\\Traits\\Viewable' => __DIR__ . '/..' . '/codeigniter4/shield/src/Traits/Viewable.php',
+        'CodeIgniter\\Shield\\Validation\\ValidationRules' => __DIR__ . '/..' . '/codeigniter4/shield/src/Validation/ValidationRules.php',
         'CodeIgniter\\Superglobals' => __DIR__ . '/../..' . '/system/Superglobals.php',
         'CodeIgniter\\Test\\CIUnitTestCase' => __DIR__ . '/../..' . '/system/Test/CIUnitTestCase.php',
         'CodeIgniter\\Test\\ConfigFromArrayTrait' => __DIR__ . '/../..' . '/system/Test/ConfigFromArrayTrait.php',
@@ -755,6 +876,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'DeepCopy\\TypeFilter\\TypeFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
         'DeepCopy\\TypeMatcher\\TypeMatcher' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
         'Deprecated' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Deprecated.php',
+        'Ergebnis\\AgentDetector\\Detector' => __DIR__ . '/..' . '/ergebnis/agent-detector/src/Detector.php',
         'Evenement\\EventEmitter' => __DIR__ . '/..' . '/evenement/evenement/src/EventEmitter.php',
         'Evenement\\EventEmitterInterface' => __DIR__ . '/..' . '/evenement/evenement/src/EventEmitterInterface.php',
         'Evenement\\EventEmitterTrait' => __DIR__ . '/..' . '/evenement/evenement/src/EventEmitterTrait.php',
@@ -1793,8 +1915,6 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'PHPUnit\\Framework\\InvalidCoversTargetException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php',
         'PHPUnit\\Framework\\InvalidDataProviderException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php',
         'PHPUnit\\Framework\\InvalidDependencyException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php',
-        'PHPUnit\\Framework\\IsolatedTestRunner' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/TestRunner/IsolatedTestRunner.php',
-        'PHPUnit\\Framework\\IsolatedTestRunnerRegistry' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/TestRunner/IsolatedTestRunnerRegistry.php',
         'PHPUnit\\Framework\\MockObject\\BadMethodCallException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/Exception/BadMethodCallException.php',
         'PHPUnit\\Framework\\MockObject\\Builder\\Identity' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/Identity.php',
         'PHPUnit\\Framework\\MockObject\\Builder\\InvocationMocker' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/InvocationMocker.php',
@@ -2358,7 +2478,6 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'PHPUnit\\Util\\InvalidJsonException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php',
         'PHPUnit\\Util\\InvalidVersionOperatorException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php',
         'PHPUnit\\Util\\Json' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Json.php',
-        'PHPUnit\\Util\\PHP\\DefaultJobRunner' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/PHP/DefaultJobRunner.php',
         'PHPUnit\\Util\\PHP\\Job' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/PHP/Job.php',
         'PHPUnit\\Util\\PHP\\JobRunner' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/PHP/JobRunner.php',
         'PHPUnit\\Util\\PHP\\JobRunnerRegistry' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/PHP/JobRunnerRegistry.php',
@@ -2371,6 +2490,12 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'PHPUnit\\Util\\Xml' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/Xml.php',
         'PHPUnit\\Util\\Xml\\Loader' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/Loader.php',
         'PHPUnit\\Util\\Xml\\XmlException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Exception/XmlException.php',
+        'Pdo\\Dblib' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Dblib.php',
+        'Pdo\\Firebird' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Firebird.php',
+        'Pdo\\Mysql' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Mysql.php',
+        'Pdo\\Odbc' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Odbc.php',
+        'Pdo\\Pgsql' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Pgsql.php',
+        'Pdo\\Sqlite' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Sqlite.php',
         'PharIo\\Manifest\\Application' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Application.php',
         'PharIo\\Manifest\\ApplicationName' => __DIR__ . '/..' . '/phar-io/manifest/src/values/ApplicationName.php',
         'PharIo\\Manifest\\Author' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Author.php',
@@ -2482,6 +2607,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'PhpCsFixer\\Console\\Command\\HelpCommand' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Command/HelpCommand.php',
         'PhpCsFixer\\Console\\Command\\InitCommand' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Command/InitCommand.php',
         'PhpCsFixer\\Console\\Command\\ListFilesCommand' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Command/ListFilesCommand.php',
+        'PhpCsFixer\\Console\\Command\\ListRulesCommand' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Command/ListRulesCommand.php',
         'PhpCsFixer\\Console\\Command\\ListSetsCommand' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Command/ListSetsCommand.php',
         'PhpCsFixer\\Console\\Command\\SelfUpdateCommand' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Command/SelfUpdateCommand.php',
         'PhpCsFixer\\Console\\Command\\WorkerCommand' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php',
@@ -2503,6 +2629,11 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'PhpCsFixer\\Console\\Report\\FixReport\\ReporterInterface' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/FixReport/ReporterInterface.php',
         'PhpCsFixer\\Console\\Report\\FixReport\\TextReporter' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/FixReport/TextReporter.php',
         'PhpCsFixer\\Console\\Report\\FixReport\\XmlReporter' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/FixReport/XmlReporter.php',
+        'PhpCsFixer\\Console\\Report\\ListRulesReport\\JsonReporter' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/ListRulesReport/JsonReporter.php',
+        'PhpCsFixer\\Console\\Report\\ListRulesReport\\ReportSummary' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/ListRulesReport/ReportSummary.php',
+        'PhpCsFixer\\Console\\Report\\ListRulesReport\\ReporterFactory' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/ListRulesReport/ReporterFactory.php',
+        'PhpCsFixer\\Console\\Report\\ListRulesReport\\ReporterInterface' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/ListRulesReport/ReporterInterface.php',
+        'PhpCsFixer\\Console\\Report\\ListRulesReport\\TextReporter' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/ListRulesReport/TextReporter.php',
         'PhpCsFixer\\Console\\Report\\ListSetsReport\\JsonReporter' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/ListSetsReport/JsonReporter.php',
         'PhpCsFixer\\Console\\Report\\ListSetsReport\\ReportSummary' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/ListSetsReport/ReportSummary.php',
         'PhpCsFixer\\Console\\Report\\ListSetsReport\\ReporterFactory' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Console/Report/ListSetsReport/ReporterFactory.php',
@@ -2586,6 +2717,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'PhpCsFixer\\Fixer\\ArrayNotation\\NoMultilineWhitespaceAroundDoubleArrowFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/NoMultilineWhitespaceAroundDoubleArrowFixer.php',
         'PhpCsFixer\\Fixer\\ArrayNotation\\NoTrailingCommaInSinglelineArrayFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/NoTrailingCommaInSinglelineArrayFixer.php',
         'PhpCsFixer\\Fixer\\ArrayNotation\\NoWhitespaceBeforeCommaInArrayFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/NoWhitespaceBeforeCommaInArrayFixer.php',
+        'PhpCsFixer\\Fixer\\ArrayNotation\\NoWhitespaceInEmptyArrayFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/NoWhitespaceInEmptyArrayFixer.php',
         'PhpCsFixer\\Fixer\\ArrayNotation\\NormalizeIndexBraceFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/NormalizeIndexBraceFixer.php',
         'PhpCsFixer\\Fixer\\ArrayNotation\\ReturnToYieldFromFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/ReturnToYieldFromFixer.php',
         'PhpCsFixer\\Fixer\\ArrayNotation\\TrimArraySpacesFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/TrimArraySpacesFixer.php',
@@ -2814,6 +2946,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'PhpCsFixer\\Fixer\\Phpdoc\\PhpdocListTypeFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocListTypeFixer.php',
         'PhpCsFixer\\Fixer\\Phpdoc\\PhpdocNoAccessFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocNoAccessFixer.php',
         'PhpCsFixer\\Fixer\\Phpdoc\\PhpdocNoAliasTagFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocNoAliasTagFixer.php',
+        'PhpCsFixer\\Fixer\\Phpdoc\\PhpdocNoDuplicateTypesFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocNoDuplicateTypesFixer.php',
         'PhpCsFixer\\Fixer\\Phpdoc\\PhpdocNoEmptyReturnFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocNoEmptyReturnFixer.php',
         'PhpCsFixer\\Fixer\\Phpdoc\\PhpdocNoPackageFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocNoPackageFixer.php',
         'PhpCsFixer\\Fixer\\Phpdoc\\PhpdocNoUselessInheritdocFixer' => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocNoUselessInheritdocFixer.php',
@@ -3135,6 +3268,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'PhpParser\\Lexer\\TokenEmulator\\AttributeEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\EnumTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\ExplicitOctalEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php',
+        'PhpParser\\Lexer\\TokenEmulator\\FnTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FnTokenEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\KeywordEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\MatchTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\NullsafeTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php',
@@ -4010,6 +4144,7 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'React\\Stream\\WritableStreamInterface' => __DIR__ . '/..' . '/react/stream/src/WritableStreamInterface.php',
         'ReflectionConstant' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/ReflectionConstant.php',
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
+        'RoundingMode' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/RoundingMode.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -4450,6 +4585,8 @@ class ComposerStaticInitddb6b3572b12daa1996763486abac461
         'Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface' => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts/EventDispatcherInterface.php',
         'Symfony\\Contracts\\Service\\Attribute\\Required' => __DIR__ . '/..' . '/symfony/service-contracts/Attribute/Required.php',
         'Symfony\\Contracts\\Service\\Attribute\\SubscribedService' => __DIR__ . '/..' . '/symfony/service-contracts/Attribute/SubscribedService.php',
+        'Symfony\\Contracts\\Service\\ContainerAwareInterface' => __DIR__ . '/..' . '/symfony/service-contracts/ContainerAwareInterface.php',
+        'Symfony\\Contracts\\Service\\ContainerProviderInterface' => __DIR__ . '/..' . '/symfony/service-contracts/ContainerProviderInterface.php',
         'Symfony\\Contracts\\Service\\ResetInterface' => __DIR__ . '/..' . '/symfony/service-contracts/ResetInterface.php',
         'Symfony\\Contracts\\Service\\ServiceCollectionInterface' => __DIR__ . '/..' . '/symfony/service-contracts/ServiceCollectionInterface.php',
         'Symfony\\Contracts\\Service\\ServiceLocatorTrait' => __DIR__ . '/..' . '/symfony/service-contracts/ServiceLocatorTrait.php',

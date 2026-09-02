@@ -290,3 +290,475 @@ DEBUG - 2026-09-02 17:22:16 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-09-02 17:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-09-02 17:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-09-02 17:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-09-02 17:26:27 --> mysqli_sql_exception: Table 'b32_41412376_mathis-frances.experience_pro' doesn't exist in C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php:387
+Stack trace:
+#0 C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\www\CV\htdocs\system\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\www\CV\htdocs\system\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\www\CV\htdocs\app\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(887): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(340): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\www\CV\htdocs\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-09-02 17:26:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.experience_pro' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 700.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:26:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.experience_pro' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 392.
+ 1 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:26:27 --> [Caused by] mysqli_sql_exception: Table 'b32_41412376_mathis-frances.experience_pro' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 387.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-02 17:27:56 --> mysqli_sql_exception: Table 'b32_41412376_mathis-frances.infos_contacts' doesn't exist in C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php:387
+Stack trace:
+#0 C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\www\CV\htdocs\system\Model.php(496): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\www\CV\htdocs\system\BaseModel.php(482): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\www\CV\htdocs\app\Controllers\Home.php(30): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(887): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(340): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\www\CV\htdocs\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-09-02 17:27:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.infos_contacts' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 700.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `infos_contacts`
+WHERE `infos_contacts`.`id` = :infos_contacts.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(496): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(482): CodeIgniter\Model->doFind(true, 1)
+ 4 APPPATH\Controllers\Home.php(30): CodeIgniter\BaseModel->find(1)
+ 5 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:27:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.infos_contacts' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 392.
+ 1 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `infos_contacts`
+WHERE `infos_contacts`.`id` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `infos_contacts`
+WHERE `infos_contacts`.`id` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `infos_contacts`
+WHERE `infos_contacts`.`id` = :infos_contacts.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(496): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(482): CodeIgniter\Model->doFind(true, 1)
+ 6 APPPATH\Controllers\Home.php(30): CodeIgniter\BaseModel->find(1)
+ 7 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:27:56 --> [Caused by] mysqli_sql_exception: Table 'b32_41412376_mathis-frances.infos_contacts' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 387.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *
+FROM `infos_contacts`
+WHERE `infos_contacts`.`id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `infos_contacts`
+WHERE `infos_contacts`.`id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `infos_contacts`
+WHERE `infos_contacts`.`id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `infos_contacts`
+WHERE `infos_contacts`.`id` = :infos_contacts.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(496): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(482): CodeIgniter\Model->doFind(true, 1)
+ 7 APPPATH\Controllers\Home.php(30): CodeIgniter\BaseModel->find(1)
+ 8 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-02 17:28:19 --> mysqli_sql_exception: Table 'b32_41412376_mathis-frances.experience_pro' doesn't exist in C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php:387
+Stack trace:
+#0 C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\www\CV\htdocs\system\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\www\CV\htdocs\system\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\www\CV\htdocs\app\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(887): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(340): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\www\CV\htdocs\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-09-02 17:28:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.experience_pro' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 700.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:28:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.experience_pro' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 392.
+ 1 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:28:19 --> [Caused by] mysqli_sql_exception: Table 'b32_41412376_mathis-frances.experience_pro' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 387.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `experience_pro`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-02 17:30:52 --> mysqli_sql_exception: Table 'b32_41412376_mathis-frances.formation' doesn't exist in C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php:387
+Stack trace:
+#0 C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\www\CV\htdocs\system\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\www\CV\htdocs\system\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\www\CV\htdocs\app\Controllers\Home.php(32): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(887): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(340): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\www\CV\htdocs\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-09-02 17:30:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.formation' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 700.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `formation`
+ORDER BY `id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(32): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:30:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.formation' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 392.
+ 1 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `formation`
+ORDER BY `id` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `formation`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `formation`
+ORDER BY `id` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(32): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:30:52 --> [Caused by] mysqli_sql_exception: Table 'b32_41412376_mathis-frances.formation' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 387.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *
+FROM `formation`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `formation`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `formation`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `formation`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(32): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-02 17:31:46 --> mysqli_sql_exception: Table 'b32_41412376_mathis-frances.loisirs' doesn't exist in C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php:387
+Stack trace:
+#0 C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\www\CV\htdocs\system\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\www\CV\htdocs\system\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\www\CV\htdocs\app\Controllers\Home.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(887): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(340): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\www\CV\htdocs\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-09-02 17:31:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.loisirs' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 700.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `loisirs`
+ORDER BY `idLoisir` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:31:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.loisirs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 392.
+ 1 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `loisirs`
+ORDER BY `idLoisir` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `loisirs`
+ORDER BY `idLoisir` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `loisirs`
+ORDER BY `idLoisir` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(33): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:31:46 --> [Caused by] mysqli_sql_exception: Table 'b32_41412376_mathis-frances.loisirs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 387.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *
+FROM `loisirs`
+ORDER BY `idLoisir` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `loisirs`
+ORDER BY `idLoisir` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `loisirs`
+ORDER BY `idLoisir` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `loisirs`
+ORDER BY `idLoisir` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(575): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(548): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(33): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-09-02 17:32:07 --> mysqli_sql_exception: Table 'b32_41412376_mathis-frances.liens_externes' doesn't exist in C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php:387
+Stack trace:
+#0 C:\xampp\htdocs\www\CV\htdocs\system\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\www\CV\htdocs\system\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\www\CV\htdocs\system\Model.php(621): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\www\CV\htdocs\system\BaseModel.php(586): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\www\CV\htdocs\app\Models\LienExternesModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\www\CV\htdocs\app\Controllers\Home.php(34): App\Models\LienExternesModel->getOneLink(1)
+#8 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(887): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\www\CV\htdocs\system\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(340): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\www\CV\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\www\CV\htdocs\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-09-02 17:32:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.liens_externes' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 700.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `liens_externes`
+WHERE `id_lien` = :id_lien:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(621): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\LienExternesModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(34): App\Models\LienExternesModel->getOneLink(1)
+ 6 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:32:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_mathis-frances.liens_externes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 392.
+ 1 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `liens_externes`
+WHERE `id_lien` = 1
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `liens_externes`
+WHERE `id_lien` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `liens_externes`
+WHERE `id_lien` = :id_lien:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(621): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\LienExternesModel.php(16): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Home.php(34): App\Models\LienExternesModel->getOneLink(1)
+ 8 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:32:07 --> [Caused by] mysqli_sql_exception: Table 'b32_41412376_mathis-frances.liens_externes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 387.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(387): mysqli->query('SELECT *
+FROM `liens_externes`
+WHERE `id_lien` = 1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(747): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `liens_externes`
+WHERE `id_lien` = 1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(659): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `liens_externes`
+WHERE `id_lien` = 1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1240): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `liens_externes`
+WHERE `id_lien` = :id_lien:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(621): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\LienExternesModel.php(16): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Home.php(34): App\Models\LienExternesModel->getOneLink(1)
+ 9 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-09-02 17:32:51 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: /]
+in APPPATH\Views\index.php on line 30.
+ 1 APPPATH\Views\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\www\\CV\\htdocs\\app\\Views\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(225): include('C:\\xampp\\htdocs\\www\\CV\\htdocs\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(228): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1181): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(38): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(576): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(238): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(340): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-09-02 17:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-02 17:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

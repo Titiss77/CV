@@ -17,7 +17,7 @@
         </div>
 
         <div class="div_age">
-            <p class="entete">Âge test</p>
+            <p class="entete">Âge</p>
             <p id="info"><?php echo calculate_age($personne['date_de_naissance']); ?> ans</p>
         </div>
 

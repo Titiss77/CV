@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>CV de Mathis FRANCES--LAVILLAUROY</title>
+    <title>CV de Mathis FRANCES--LAVILLAUROY test</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -21,7 +21,8 @@
         <div class="prez">
             <h2>Qui suis-je ?</h2>
             <p>Diplômé du Baccalauréat et actuellement en BTS SIO.</p>
-            <a href="<?php echo base_url('pdf/CV- Mathis Frances--Lavillauroy.pdf'); ?>" download>Mon CV au format PDF</a>
+            <a href="<?php echo base_url('pdf/CV- Mathis Frances--Lavillauroy.pdf'); ?>" download>Mon CV au format
+                PDF</a>
         </div>
         <div class="contact">
             <h2>Informations de contact</h2>
@@ -58,8 +59,8 @@
         <?php foreach ($experiences as $exp) { ?>
         <div class="exp">
             <div class="exp-logo">
-                <a href="#"><img src="<?php echo base_url(esc($exp['chemin_image'])); ?>" alt="<?php echo esc($exp['libelle']); ?>"
-                        class="chemin_image"></a>
+                <a href="#"><img src="<?php echo base_url(esc($exp['chemin_image'])); ?>"
+                        alt="<?php echo esc($exp['libelle']); ?>" class="chemin_image"></a>
             </div>
             <div class="exp-info">
                 <h3 class="libelle"><?php echo esc($exp['libelle']); ?></h3>
@@ -143,7 +144,8 @@
         <h2>Centres d'intérêt</h2>
         <?php foreach ($loisirs as $loisir) { ?>
         <figure class="interet">
-            <img src="<?php echo base_url(esc($loisir['chemin_image'])); ?>" alt="<?php echo esc($loisir['libelle']); ?>">
+            <img src="<?php echo base_url(esc($loisir['chemin_image'])); ?>"
+                alt="<?php echo esc($loisir['libelle']); ?>">
             <figcaption><?php echo esc($loisir['libelle']); ?></figcaption>
         </figure>
         <?php } ?>

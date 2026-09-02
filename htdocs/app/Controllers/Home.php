@@ -35,6 +35,6 @@ class Home extends BaseController
         ];
 
         // Le CV garde sa propre structure HTML indépendante du reste du site
-        return view('cv/index', $data);
+        return view('index', $data);
     }
 }

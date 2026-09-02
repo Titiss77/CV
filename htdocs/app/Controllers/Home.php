@@ -4,17 +4,12 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-use App\Models\CategoriesBloc1Model;
-use App\Models\CompetencesAcocherModel;
-use App\Models\ContactModel;
-use App\Models\ExpProModel;
-use App\Models\FormationModel;
 use App\Models\InfoContactModel;
-use App\Models\JustificationModel;
-use App\Models\LienExternesModel;
+use App\Models\ExpProModel;
+use App\Models\ExpSportModel;
+use App\Models\FormationModel;
 use App\Models\LoisirsModel;
-use App\Models\PersonnelleModel;
-use App\Models\ProjetModel;
+use App\Models\LienExternesModel;
 
 class Home extends BaseController
 {
@@ -22,13 +17,15 @@ class Home extends BaseController
     {
         $infoContactModel = new InfoContactModel();
         $expProModel = new ExpProModel();
+        $expSportModel = new ExpSportModel();
         $formationModel = new FormationModel();
         $loisirsModel = new LoisirsModel();
         $lienExternesModel = new LienExternesModel();
 
         $data = [
             'contact' => $infoContactModel->find(1),
-            'experiences' => $expProModel->orderBy('id', 'DESC')->findAll(),
+            'experiences_pro' => $expProModel->orderBy('id', 'DESC')->findAll(),
+            'experiences_sport' => $expSportModel->orderBy('id', 'DESC')->findAll(),
             'formations' => $formationModel->orderBy('id', 'DESC')->findAll(),
             'loisirs' => $loisirsModel->orderBy('idLoisir', 'ASC')->findAll(),
             'lienExternes' => $lienExternesModel->getOneLink(1),

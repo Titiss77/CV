@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>CV de Mathis FRANCES--LAVILLAUROY test</title>
+    <title>CV de Mathis</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -20,7 +20,7 @@
         </div>
         <div class="prez">
             <h2>Qui suis-je ?</h2>
-            <p>Diplômé du Baccalauréat et actuellement en BTS SIO.</p>
+            <p>Diplômé du Baccalauréat et d'un BTS SIO option SLAM.</p>
             <a href="<?php echo base_url('pdf/CV- Mathis Frances--Lavillauroy.pdf'); ?>" download>Mon CV au format
                 PDF</a>
         </div>
@@ -56,7 +56,7 @@
 
     <section>
         <h2>Expériences professionnelles</h2>
-        <?php foreach ($experiences as $exp) { ?>
+        <?php foreach ($experiences_pro as $exp) { ?>
         <div class="exp">
             <div class="exp-logo">
                 <a href="#"><img src="<?php echo base_url(esc($exp['chemin_image'])); ?>"
@@ -138,6 +138,25 @@
             <p>70%</p>
             <div class="conteneur-barre2"><span class="barre c70"></span></div>
         </div>
+    </section>
+
+    <section>
+        <h2>Expériences sportives</h2>
+        <?php foreach ($experiences_sport as $exp) { ?>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="<?php echo base_url(esc($exp['chemin_image'])); ?>"
+                        alt="<?php echo esc($exp['libelle']); ?>" class="chemin_image"></a>
+            </div>
+            <div class="exp-info">
+                <h3 class="libelle"><?php echo esc($exp['libelle']); ?></h3>
+                <h4 class="periode"><?php echo esc($exp['frequence']); ?></h4>
+            </div>
+            <div class="exp-desc">
+                <p class="description"><?php echo esc($exp['description']); ?></p>
+            </div>
+        </div>
+        <?php } ?>
     </section>
 
     <section>

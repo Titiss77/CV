@@ -20,22 +20,22 @@ class Home extends BaseController
 {
     public function index()
     {
-        helper('age');
-
-        $infos_generalesModel = new PersonnelleModel();
-        $lienExternesModel = new LienExternesModel();
+        $infoContactModel = new InfoContactModel();
+        $expProModel = new ExpProModel();
+        $formationModel = new FormationModel();
         $loisirsModel = new LoisirsModel();
+        $lienExternesModel = new LienExternesModel();
 
         $data = [
-            'title' => 'Accueil - Portfolio',
-            // Le CSS global (style.css) est déjà chargé dans le layout, pas besoin de l'ajouter ici
-            'personne' => $infos_generalesModel->first(),
-            'lienExternes' => $lienExternesModel->findAll(),
-            'loisirs' => $loisirsModel->findAll(),
+            'contact' => $infoContactModel->find(1),
+            'experiences' => $expProModel->orderBy('id', 'DESC')->findAll(),
+            'formations' => $formationModel->orderBy('id', 'DESC')->findAll(),
+            'loisirs' => $loisirsModel->orderBy('idLoisir', 'ASC')->findAll(),
+            'lienExternes' => $lienExternesModel->getOneLink(1),
         ];
 
-        // On ne retourne plus que la vue finale
-        return view('home/index', $data);
+        // Le CV garde sa propre structure HTML indépendante du reste du site
+        return view('cv/index', $data);
     }
 
     public function tableau()

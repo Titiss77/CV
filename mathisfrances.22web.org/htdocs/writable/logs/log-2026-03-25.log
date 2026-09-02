@@ -1,0 +1,494 @@
+DEBUG - 2026-03-25 08:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-03-25 08:21:58 --> mysqli_sql_exception: Table 'b32_41412376_portfolio.articles' doesn't exist in C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\app\Controllers\Veille.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(933): App\Controllers\Veille->index()
+#8 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+#9 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-03-25 08:21:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_portfolio.articles' doesn't exist
+[Method: GET, Route: veille]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `pub_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Veille.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 08:21:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_portfolio.articles' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `pub_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `pub_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `pub_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Veille.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 08:21:58 --> [Caused by] mysqli_sql_exception: Table 'b32_41412376_portfolio.articles' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `articles`
+ORDER BY `pub_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `pub_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `pub_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `pub_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Veille.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 08:22:44 --> Error: Call to undefined function character_limiter()
+[Method: GET, Route: veille]
+in APPPATH\Views\veille_view.php on line 87.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('veille_view', [], true)
+ 4 APPPATH\Controllers\Veille.php(17): view('veille_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-03-25 08:39:08 --> mysqli_sql_exception: Duplicate entry 'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire' for key 'articles.link' in C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ar...', 0)
+#1 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\app\Models\ArticleModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\app\Controllers\Veille.php(75): App\Models\ArticleModel->insertIfNotExists(Array)
+#9 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(933): App\Controllers\Veille->fetch_rss()
+#10 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+#11 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2026-03-25 08:39:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire' for key 'articles.link'
+[Method: GET, Route: veille/fetch_rss]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (:title:, :link:, :description:, :pub_date:, :source:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ArticleModel.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Veille.php(75): App\Models\ArticleModel->insertIfNotExists([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->fetch_rss()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 08:39:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire' for key 'articles.link'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (:title:, :link:, :description:, :pub_date:, :source:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ArticleModel.php(23): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Veille.php(75): App\Models\ArticleModel->insertIfNotExists([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->fetch_rss()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 08:39:08 --> [Caused by] mysqli_sql_exception: Duplicate entry 'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire' for key 'articles.link'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (:title:, :link:, :description:, :pub_date:, :source:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ArticleModel.php(23): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Veille.php(75): App\Models\ArticleModel->insertIfNotExists([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->fetch_rss()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-03-25 08:39:09 --> mysqli_sql_exception: Duplicate entry 'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire' for key 'articles.link' in C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ar...', 0)
+#1 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\app\Models\ArticleModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\app\Controllers\Veille.php(75): App\Models\ArticleModel->insertIfNotExists(Array)
+#9 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(933): App\Controllers\Veille->fetch_rss()
+#10 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+#11 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2026-03-25 08:39:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire' for key 'articles.link'
+[Method: GET, Route: veille/fetch_rss]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (:title:, :link:, :description:, :pub_date:, :source:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ArticleModel.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Veille.php(75): App\Models\ArticleModel->insertIfNotExists([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->fetch_rss()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 08:39:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire' for key 'articles.link'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (:title:, :link:, :description:, :pub_date:, :source:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ArticleModel.php(23): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Veille.php(75): App\Models\ArticleModel->insertIfNotExists([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->fetch_rss()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 08:39:09 --> [Caused by] mysqli_sql_exception: Duplicate entry 'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire' for key 'articles.link'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (\'Move &amp; Connect s&#39;associe à KORE pour offrir une connectivité IdO paneuropéenne fluide ...\', \'https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/move--connect-sassocie-a-kore-pour-offrir-une-connectivite-ido-paneuropeenne-fluide-aux-industries-critiques-302723846.html&ct=ga&cd=CAIyGWEyZDc1YTAxNDlhODIxZDc6ZnI6ZnI6RlI&usg=AOvVaw0ENvBQrkXvFT-0Cee4YL0c\', \'Move &amp; Connect se asocia con KORE para ofrecer conectividad IoT. KORE Group Holdings, Inc. (NYSE: KORE), el proveedor global de soluciones de Internet&nbsp;...\', \'2026-03-24 18:48:23\', \'Google Alerts - IoT\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articles` (`title`, `link`, `description`, `pub_date`, `source`) VALUES (:title:, :link:, :description:, :pub_date:, :source:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ArticleModel.php(23): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Veille.php(75): App\Models\ArticleModel->insertIfNotExists([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->fetch_rss()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 09:34:46 --> ErrorException: Undefined variable $title
+[Method: GET, Route: veille]
+in APPPATH\Views\templates\header.php on line 11.
+ 1 APPPATH\Views\templates\header.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\templates\\header.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH\Controllers\Veille.php(20): view('templates/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-03-25 09:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-03-25 09:40:18 --> ErrorException: Undefined variable $title
+[Method: GET, Route: veille]
+in APPPATH\Views\templates\header.php on line 11.
+ 1 APPPATH\Views\templates\header.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\templates\\header.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH\Controllers\Veille.php(20): view('templates/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 09:40:19 --> ErrorException: Undefined variable $title
+[Method: GET, Route: veille]
+in APPPATH\Views\templates\header.php on line 11.
+ 1 APPPATH\Views\templates\header.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\templates\\header.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH\Controllers\Veille.php(20): view('templates/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 09:42:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+[Method: GET, Route: veille]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Veille.php(20): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 09:42:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+[Method: GET, Route: veille]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Veille.php(20): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Veille->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Veille))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 09:51:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "templates/header.php"
+[Method: GET, Route: tableau]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/header.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/header', [], true)
+ 3 APPPATH\Controllers\Home.php(74): view('templates/header', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tableau()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 09:51:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "templates/header.php"
+[Method: GET, Route: tableau]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/header.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/header', [], true)
+ 3 APPPATH\Controllers\Home.php(74): view('templates/header', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tableau()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-03-25 09:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-25 09:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-25 09:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-25 14:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-03-25 15:11:38 --> mysqli_sql_exception: Table 'b32_41412376_portfolio.categoriesbloc1' doesn't exist in C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\app\Controllers\Home.php(45): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(933): App\Controllers\Home->tableau()
+#8 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-03-25 15:11:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_portfolio.categoriesbloc1' doesn't exist
+[Method: GET, Route: tableau]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categoriesbloc1`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(45): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tableau()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 15:11:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'b32_41412376_portfolio.categoriesbloc1' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categoriesbloc1`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categoriesbloc1`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categoriesbloc1`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(45): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tableau()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 15:11:39 --> [Caused by] mysqli_sql_exception: Table 'b32_41412376_portfolio.categoriesbloc1' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `categoriesbloc1`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categoriesbloc1`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categoriesbloc1`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categoriesbloc1`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(45): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tableau()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-03-25 15:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-03-25 15:37:42 --> mysqli_sql_exception: Unknown column 'id_categorie' in 'where clause' in C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\app\Controllers\Home.php(49): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(933): App\Controllers\Home->tableau()
+#8 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\mfrancesla\Desktop\xampp\htdocs\Portfolio\htdocs\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-03-25 15:37:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_categorie' in 'where clause'
+[Method: GET, Route: tableau]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `competences_a_cocher`
+WHERE `id_categorie` = :id_categorie:
+ORDER BY `id` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(49): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tableau()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 15:37:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_categorie' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `competences_a_cocher`
+WHERE `id_categorie` = \'1\'
+ORDER BY `id` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `competences_a_cocher`
+WHERE `id_categorie` = \'1\'
+ORDER BY `id` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `competences_a_cocher`
+WHERE `id_categorie` = :id_categorie:
+ORDER BY `id` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(49): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tableau()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 15:37:42 --> [Caused by] mysqli_sql_exception: Unknown column 'id_categorie' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `competences_a_cocher`
+WHERE `id_categorie` = \'1\'
+ORDER BY `id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `competences_a_cocher`
+WHERE `id_categorie` = \'1\'
+ORDER BY `id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `competences_a_cocher`
+WHERE `id_categorie` = \'1\'
+ORDER BY `id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `competences_a_cocher`
+WHERE `id_categorie` = :id_categorie:
+ORDER BY `id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(49): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tableau()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 15:37:48 --> ErrorException: Undefined array key "photo_de_profil"
+[Method: GET, Route: /]
+in APPPATH\Views\home\index.php on line 8.
+ 1 APPPATH\Views\home\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo_de_profil"', 'C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\home\\index.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-25 15:46:32 --> ErrorException: Undefined array key "date_de_naissance"
+[Method: GET, Route: /]
+in APPPATH\Views\home\index.php on line 21.
+ 1 APPPATH\Views\home\index.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date_de_naissance"', 'C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\home\\index.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\mfrancesla\\Desktop\\xampp\\htdocs\\Portfolio\\htdocs\\app\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-03-25 15:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-25 15:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

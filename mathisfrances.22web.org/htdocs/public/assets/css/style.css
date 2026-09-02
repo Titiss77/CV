@@ -1,0 +1,572 @@
+:root {
+    /* ESPACEMENTS & BORDURES */
+    --margin: 15px;
+    --padding: 10px;
+    --border-radius: 20px;
+    --border-radius-img: 50%;
+
+    /* TYPOGRAPHIE & TAILLES */
+    --font-size-small: 12px;
+    --font-size-medium: 18px;
+    --font-size-large: 22px;
+    --font-size-header: 20px;
+
+    /* PALETTE COULEURS PRINCIPALES */
+    --bg-body: #f4f7f6;
+    /* Fond général clair (écru/gris très clair) */
+    --bg-h-f: #ffffff;
+    /* Sections / blocs blancs / headers */
+    --bg-overlay: rgba(0, 0, 0, 0.7);
+
+    --color-text: #2c3e50;
+    /* Texte principal (anthracite bleuté) */
+    --color-text-muted: #7f8c8d;
+    /* Texte secondaire (descriptions, dates) */
+    --color-border: #d0d0d0;
+    /* Bordures très légères */
+
+    /* COULEURS THEMATIQUES (Boutons, Liens, Badges) */
+    --color-primary: #535353;
+    /* Bleu principal (boutons, liens) */
+    --color-primary-hover: #2980b9;
+    /* Bleu foncé au survol */
+    --color-secondary: #484848;
+    /* Gris foncé (boutons secondaires) */
+    --color-secondary-hover: #DFDFDF;
+    /* Gris clair */
+    --color-accent: #f39c12;
+    /* Accentuation (orange/jaune) */
+    --color-badge: #e74c3c;
+    /* Rouge (badges, alertes) */
+
+    /* COULEURS DE PROGRESSION (CV) */
+    --color-success: #2ecc71;
+    /* Vert vif (100%) */
+    --color-success-light: #27ae60;
+    /* Vert nuancé */
+
+    /* OMBRES */
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    --box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Police modernisée */
+    background-color: var(--bg-body);
+    color: var(--color-text);
+}
+
+/* Header */
+header {
+    background-color: var(--bg-h-f);
+    padding: var(--padding);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header li {
+    padding: var(--padding);
+    width: 25%;
+    text-align: center;
+}
+
+header a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: var(--font-size-header);
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: var(--color-primary);
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    margin: 5rem 12rem;
+    min-width: 10rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+/* Présentation */
+.presentation {
+    width: 33.33%;
+    padding: 20px;
+    background-color: var(--bg-h-f);
+    margin-right: var(--margin);
+    border: 1px solid var(--color-border);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--border-radius-img);
+}
+
+.nom {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.etudes {
+    font-size: var(--font-size-medium);
+}
+
+.liens_extern,
+.div_age,
+.div_loca {
+    border: 1px solid var(--color-border);
+    margin: 20px;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+}
+
+.entete {
+    border: 0.5px solid var(--color-text);
+    background-color: var(--bg-h-f);
+    position: relative;
+    top: -34px;
+    padding: 5px;
+    border-radius: var(--border-radius);
+}
+
+#lien p,
+#info {
+    position: relative;
+    top: -25px;
+}
+
+#lien {
+    display: block;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: var(--font-size-large);
+    position: relative;
+    top: -25px;
+}
+
+#lien:hover {
+    text-decoration: underline;
+}
+
+.expertise .perso {
+    text-transform: none;
+    margin: 60px;
+}
+
+/* Intérêt Section */
+.interet {
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: var(--margin);
+    padding: 7%;
+}
+
+.interet img {
+    width: 70px;
+    height: 70px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+figcaption {
+    display: block;
+    unicode-bidi: isolate;
+    margin-top: var(--margin);
+}
+
+/* Autre Section */
+.autre {
+    display: grid;
+    width: 66.66%;
+}
+
+.expertise,
+.divLoisir {
+    padding: 20px;
+    background-color: var(--bg-h-f);
+    border: 1px solid var(--color-border);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+}
+
+.expertise {
+    margin-bottom: var(--margin);
+}
+
+.loisir {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    position: relative;
+    height: 150px;
+    z-index: 100;
+}
+
+.invitation {
+    position: fixed;
+    right: 75px;
+    bottom: 0;
+    font-size: var(--font-size-large);
+    color: var(--color-badge);
+    /* Utilisation de la variable */
+}
+
+/* Tableau */
+.tableau {
+    display: flex;
+    margin-top: 50px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th,
+td {
+    padding: var(--padding);
+    text-align: left;
+    border: 2px solid var(--color-border);
+    background-color: var(--bg-body);
+    font-size: var(--font-size-small);
+}
+
+th {
+    background-color: var(--bg-h-f);
+    font-weight: bold;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--bg-h-f);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 95%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    /* Adouci */
+    background-color: var(--bg-body);
+    color: var(--color-text);
+}
+
+.submit-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--bg-h-f);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-justification {
+    text-align: center;
+    width: 35px;
+    background-color: var(--color-secondary-hover);
+    border: 1px solid var(--color-secondary);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-justification:hover {
+    background-color: var(--color-secondary);
+    color: var(--bg-h-f);
+}
+
+.justification-popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-body);
+    border: 1px solid var(--color-border);
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: var(--box-shadow-hover);
+    border-radius: var(--border-radius);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-overlay);
+    z-index: 999;
+}
+
+.justification-popup button {
+    padding: 10px;
+    background-color: var(--bg-h-f);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.justification-popup button:hover {
+    background-color: var(--color-secondary);
+    color: var(--bg-h-f);
+}
+
+/* =========================================
+   PAGE PROJETS
+   ========================================= */
+.projets-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 120px auto 50px auto;
+    /* Marge en haut pour éviter le header fixe */
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.projet-card {
+    background: var(--bg-h-f);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    width: 280px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.projet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.projet-card .date {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-style: italic;
+    font-size: 0.85em;
+    color: var(--color-text-muted);
+}
+
+.projet-card .titre {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--color-primary);
+    margin: 0 0 15px 0;
+    padding-right: 70px;
+    /* Évite que le titre ne chevauche la date */
+}
+
+.projet-card .description {
+    color: var(--color-text);
+    font-size: 0.95em;
+    flex-grow: 1;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.projet-card button {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 10px 16px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.projet-card button:hover {
+    background-color: var(--color-primary);
+    color: var(--bg-h-f);
+}
+
+/* =========================================
+   PAGE COMPETENCES (TABLEAU)
+   ========================================= */
+.tableau {
+    display: flex;
+    justify-content: center;
+    margin: 120px auto 50px auto;
+    overflow-x: auto;
+    /* Permet de scroller sur mobile si le tableau est trop large */
+    padding: 0 20px;
+}
+
+#monTableau {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background-color: var(--bg-h-f);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Permet aux coins arrondis de s'appliquer au tableau */
+}
+
+#monTableau th,
+#monTableau td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid var(--color-border);
+    font-size: var(--font-size-medium);
+    color: var(--color-text);
+}
+
+#monTableau th {
+    background-color: var(--color-primary);
+    color: var(--bg-h-f);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#monTableau tr:nth-child(even) {
+    background-color: var(--bg-body);
+    /* Alterne les couleurs des lignes */
+}
+
+/* Modal / Popup de justification */
+.justification-popup {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-h-f);
+    padding: 30px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Ombre plus forte pour faire ressortir le popup */
+    z-index: 1001;
+    color: var(--color-text);
+}
+
+/* NOUVEAU : Style pour le bouton vers Google Drive */
+.justification-popup .drive-btn {
+    background-color: var(--color-primary);
+    color: var(--bg-h-f);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+    /* Centre le bouton dans le popup */
+    box-shadow: var(--box-shadow);
+}
+
+.justification-popup .drive-btn:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-3px);
+    /* Petit effet de soulèvement */
+    box-shadow: var(--box-shadow-hover);
+}
+
+.justification-popup .drive-btn i {
+    margin-right: 8px;
+    /* Espace entre l'icône (si utilisée) et le texte */
+}
+
+.justification-popup .close-btn {
+    background-color: var(--color-badge);
+    /* Rouge */
+    color: var(--bg-h-f);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-bottom: 15px;
+    transition: 0.2s ease;
+}
+
+.justification-popup .close-btn:hover {
+    filter: brightness(0.8);
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-overlay);
+    z-index: 1000;
+    display: none;
+    backdrop-filter: blur(3px);
+    /* Ajoute un effet de flou élégant à l'arrière-plan */
+}

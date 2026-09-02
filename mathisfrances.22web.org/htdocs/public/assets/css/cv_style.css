@@ -1,0 +1,347 @@
+/* STYLES GENERAUX (Synchronisés avec la charte du site) */
+:root {
+    --margin: 15px;
+    --padding: 10px;
+    --border-radius: 20px;
+    --border-radius-img: 50%;
+    --font-size-small: 12px;
+    --font-size-medium: 18px;
+    --font-size-large: 22px;
+    --font-size-header: 20px;
+    --bg-body: #f4f7f6;
+    --bg-h-f: #ffffff;
+    --bg-overlay: rgba(0, 0, 0, 0.7);
+    --color-text: #2c3e50;
+    --color-text-muted: #7f8c8d;
+    --color-border: #d0d0d0;
+    --color-primary: #3498db;
+    --color-primary-hover: #2980b9;
+    --color-secondary: #484848;
+    --color-accent: #f39c12;
+    --color-success: #2ecc71;
+    --color-success-light: #27ae60;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    --box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    font-family: Avenir, 'Segoe UI', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-body);
+    color: var(--color-text);
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+/*HEADER & FOOTER*/
+header,
+footer {
+    width: 100%;
+    padding: 20px 0px;
+    background: url("../images/cv/cv-cover.png") var(--color-secondary);
+    /* Correction chemin image & fallback */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    border-bottom: 2px solid var(--color-border);
+    height: 120px;
+}
+
+header h1 {
+    color: var(--bg-h-f);
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*SECTIONS*/
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-h-f);
+    border-radius: var(--border-radius);
+}
+
+section h2 {
+    margin: 20px 0;
+    width: 90%;
+}
+
+section>div {
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--color-border);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-img);
+    /* Rond */
+    margin-top: -80px;
+    background: var(--bg-h-f);
+}
+
+.prez {
+    border-bottom: 2px dashed var(--color-border);
+}
+
+.prez a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: var(--bg-h-f);
+    background-color: var(--color-primary);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.prez a:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.contact-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.contact-flex p:first-child {
+    flex: 0 0 40%;
+}
+
+.contact-flex p:last-child {
+    flex: 0 0 60%;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+/*SECTION EXP ET FORMATION*/
+.exp {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.exp-info {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+
+.exp-logo {
+    position: relative;
+    flex: 0 0 25%;
+    max-width: 100px;
+    left: 30px;
+    top: 15px;
+}
+
+.exp img {
+    width: 100%;
+}
+
+.exp h3 {
+    font-size: 1.2em;
+}
+
+.exp h4 {
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--color-text-muted);
+}
+
+/*SECTION COMPETENCES*/
+.h3gauche {
+    width: 90%;
+}
+
+.comp {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.comp p {
+    flex: 0 0 40%;
+}
+
+.conteneur-barre {
+    flex: 0 0 60%;
+    border-radius: 8px;
+    background-color: var(--color-border);
+}
+
+.barre {
+    display: block;
+    height: 10px;
+    border-radius: 8px;
+}
+
+.c70 {
+    width: 70%;
+    background-color: var(--color-success-light);
+}
+
+.c85 {
+    width: 85%;
+    background-color: var(--color-success-light);
+}
+
+.c90 {
+    width: 90%;
+    background-color: var(--color-success);
+}
+
+.c95 {
+    width: 95%;
+    background-color: var(--color-success);
+}
+
+.c100 {
+    width: 100%;
+    background-color: var(--color-success);
+}
+
+.comp2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.conteneur-barre2 {
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 8px;
+    background-color: var(--color-border);
+}
+
+/*SECTION INTERETS*/
+.interet {
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.interet img {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px) {
+    section {
+        width: 80%;
+    }
+
+    a:hover {
+        color: var(--color-primary);
+    }
+
+    header h1 {
+        width: 80%;
+    }
+
+    .prez,
+    .contact {
+        flex: 0 0 45%;
+    }
+
+    .prez {
+        border-bottom: none;
+        border-right: 2px solid var(--color-border);
+        padding-right: 20px;
+        margin-left: auto;
+    }
+
+    .contact {
+        padding-left: 20px;
+        margin-right: auto;
+    }
+
+    .exp-logo {
+        flex: 0 0 10%;
+    }
+
+    .exp-info,
+    .exp-desc {
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+
+    .interet {
+        flex: 0 1 25%;
+    }
+}
+
+.fa-moon,
+.fa-sun {
+    color: var(--color-text);
+    transform: scale(2);
+    padding: 2px 0 0 12px;
+}
+
+.night_to_light {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--bg-h-f);
+    box-shadow: var(--box-shadow-hover);
+    border: none;
+    cursor: pointer;
+    border-radius: var(--border-radius-img);
+    /* Rond */
+    transition: background-color 0.3s ease;
+}
+
+.night_to_light:hover {
+    background-color: var(--color-border);
+}
